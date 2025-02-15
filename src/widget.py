@@ -13,11 +13,11 @@ def mask_account_card(type_and_number: Union[str]) -> Union[str]:
     digit_result = ""
     digit_count = 0
     for el in type_and_number:
-        if el.isalpha():
-            text_result += el
-        elif el.isdigit():
+        if el.isdigit():
             digit_result += el
             digit_count += 1
+        else:
+            text_result += el
     if digit_count > 16:
         return f"{text_result} {get_mask_account(digit_result)}"
     else:
