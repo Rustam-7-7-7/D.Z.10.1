@@ -1,4 +1,4 @@
-# Домашнее задание № 9.2
+# Домашнее задание № 10.1
 #############################################################################
 account_number = input()
 card_number = input()
@@ -16,3 +16,4 @@ def get_mask_account(account_number: int) -> str:
     return f"**{account_number[-4:]}"
 
 print(get_mask_account(account_number(73654108430135874305)))
+
