@@ -1,7 +1,7 @@
 # Домашнее задание № 10.2
 #############################################################################
-account_number = input()
-card_number = input()
+account_number = input(f'Введите номер счёта: ')
+card_number = input(f'Введите номер карты: ')
 
 
 def get_mask_card_number(card_number: int) -> str:
@@ -10,7 +10,7 @@ def get_mask_card_number(card_number: int) -> str:
     return f"{card_number[:4]} {card_number[4:6]} ** **** {card_number[12:]}"
 
 
-print(get_mask_card_number(card_number(7000792289606361)))
+print(get_mask_card_number(card_number))
 
 
 def get_mask_account(account_number: int) -> str:
@@ -19,6 +19,6 @@ def get_mask_account(account_number: int) -> str:
     return f"**{account_number[-4:]}"
 
 
-print(get_mask_account(account_number(73654108430135874305)))
+print(get_mask_account(account_number))
 
 #############################################################################
