@@ -103,7 +103,7 @@ transactions = (
 
 #Пример использования функции
 usd_transactions = filter_by_currency(transactions, "USD")
-for _ in range(3):
+for _ in range(2):
     print(next(usd_transactions))
 
 
@@ -142,5 +142,5 @@ def card_number_generator(start, end):
 
 
 #Пример использования функции
-for card_number in card_number_generator(1, 5):
+for card_number in card_number_generator(1, 7):
     print(card_number)
