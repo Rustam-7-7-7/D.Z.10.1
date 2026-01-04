@@ -49,7 +49,6 @@ def test_mask_account_card(type_and_number, expected):
 # Счет 73654108430135874305
 
 
-
 def test_get_date():
     assert get_date('2025-03-11T02:26:18.671407') == '11.03.2025'
 

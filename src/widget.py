@@ -33,6 +33,3 @@ def get_date(user_date: Union[str]) -> Union[str]:
     new_date = date_format.strftime("%d.%m.%Y")
 
     return new_date
-
-
-

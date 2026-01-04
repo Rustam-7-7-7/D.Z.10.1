@@ -100,8 +100,7 @@ transactions = (
     ]
 )
 
-
-#Пример использования функции
+# Пример использования функции
 usd_transactions = filter_by_currency(transactions, "USD")
 for _ in range(2):
     print(next(usd_transactions))
@@ -115,7 +114,7 @@ def transaction_descriptions(transactions):
         yield transaction.get("description", "")
 
 
-#Пример использования функции
+# Пример использования функции
 descriptions = transaction_descriptions(transactions)
 for _ in range(5):
     print(next(descriptions))
@@ -137,10 +136,10 @@ def card_number_generator(start, end):
         raise ValueError('Начальное значение не может быть больше конечного')
 
     for num in range(start, end + 1):
-        num_card = f'{num:016}'    #str(num).zfill(16)
+        num_card = f'{num:016}'  # str(num).zfill(16)
         yield f"{num_card[:4]} {num_card[4:8]} {num_card[8:12]} {num_card[12:]}"
 
 
-#Пример использования функции
+# Пример использования функции
 for card_number in card_number_generator(1, 7):
     print(card_number)
