@@ -158,6 +158,8 @@ def test_card_number_generator():
               '0000 0000 0000 0018',
               '0000 0000 0000 0019'])
 ])
+
+
 def test_card_number_generator_param(start, end, expected_output):
     result = list(card_number_generator(start, end))
     assert result == expected_output
