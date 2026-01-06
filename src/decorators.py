@@ -34,7 +34,7 @@ def log(filename=None):
 
 
 # Пример использования декоратора
-@log("mylog.txt")
+@log()
 def my_function(x, y):
     return x / y
 
