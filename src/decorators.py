@@ -25,7 +25,6 @@ def log(filename=None):
 
                 result = None
 
-
             if filename:
                 with open(filename, 'a', encoding="utf--8") as file:
                     file.write(log_message)

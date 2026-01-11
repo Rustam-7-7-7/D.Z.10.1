@@ -1,7 +1,7 @@
 import datetime
 from typing import Union
 
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(type_and_number: Union[str]) -> Union[str]:
