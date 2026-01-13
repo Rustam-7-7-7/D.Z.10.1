@@ -9,7 +9,7 @@ def load_transactions(file_path, success=True):
     if success:
         logger.info('Функция выполнена успешно.')
     else:
-        logger.error('В функции произошла ошибка..')
+        logger.error('В функции произошла ошибка.')
 
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
