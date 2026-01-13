@@ -5,10 +5,11 @@ def load_transactions(file_path, success=True):
     ''' Функция, которая принимает на вход путь до JSON-файла и возвращает список
          словарей с данными о финансовых транзакциях. Если файл пустой, содержит не список
           или не найден, функция возвращает пустой список. '''
+
     if success:
-        logger.info('Function executed successfully.')
+        logger.info('Функция выполнена успешно.')
     else:
-        logger.error('An error occurred in the function.')
+        logger.error('В функции произошла ошибка..')
 
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -32,7 +33,7 @@ logger = logging.getLogger('utils')
 
 logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler('../logs/utils.log', mode='w')
+file_handler = logging.FileHandler('../logs/utils.log', mode='w', encoding="utf--8")
 
 file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
