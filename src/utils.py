@@ -6,10 +6,10 @@ def load_transactions(file_path, success=True):
          словарей с данными о финансовых транзакциях. Если файл пустой, содержит не список
           или не найден, функция возвращает пустой список. '''
 
-    if success:
-        logger.info('Функция выполнена успешно.')
-    else:
-        logger.error('В функции произошла ошибка.')
+    # if success:
+    #     logger.info('Функция выполнена успешно.')
+    # else:
+    #     logger.error('В функции произошла ошибка.')
 
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -22,28 +22,29 @@ def load_transactions(file_path, success=True):
 
 
 # Пример использования функции
-# transactions = load_transactions('../data/operations.json')
-# print(transactions)
+transactions = load_transactions('../data/operations.json')
+for transaction in transactions:
+    print(transaction)
 
 
 # Логирование
-import logging
-
-logger = logging.getLogger('utils')
-
-logger.setLevel(logging.DEBUG)
-
-file_handler = logging.FileHandler('../logs/utils.log', mode='w', encoding="utf--8")
-
-file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-
-file_handler.setFormatter(file_formatter)
-
-logger.addHandler(file_handler)
+# import logging
+#
+# logger = logging.getLogger('utils')
+#
+# logger.setLevel(logging.DEBUG)
+#
+# file_handler = logging.FileHandler('../logs/utils.log', mode='w', encoding="utf--8")
+#
+# file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+#
+# file_handler.setFormatter(file_formatter)
+#
+# logger.addHandler(file_handler)
 
 # Пример использования логера
-transactions = load_transactions('../data/operations.json', success=True)
-print(transactions)
+# transactions = load_transactions('../data/operations.json', success=True)
+# print(transactions)
 
-transactions = load_transactions('../data/operations.json', success=False)
-print(transactions)
+# transactions = load_transactions('../data/operations.json', success=False)
+# print(transactions)

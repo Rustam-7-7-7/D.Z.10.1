@@ -20,11 +20,11 @@ def read_financial_operations_from_csv(file_path):
 
 
 # Пример использования
-file_path = '../data/transactions.csv'
-transactions = read_financial_operations_from_csv(file_path)
-
-for transaction in transactions:
-    print(transaction)
+# file_path = '../data/transactions.csv'
+# transactions = read_financial_operations_from_csv(file_path)
+#
+# for transaction in transactions:
+#     print(transaction)
 
 ######################################################################
 import pandas as pd
@@ -41,8 +41,8 @@ def read_financial_operations_from_excel(file_path):
 
 
 # Пример использования
-file_path = '../data/transactions_excel.xlsx'
-transactions = read_financial_operations_from_excel(file_path)
-
-for transaction in transactions:
-    print(transaction)
+# file_path = '../data/transactions_excel.xlsx'
+# transactions = read_financial_operations_from_excel(file_path)
+#
+# for transaction in transactions:
+#     print(transaction)

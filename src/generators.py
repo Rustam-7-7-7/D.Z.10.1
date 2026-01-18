@@ -101,9 +101,9 @@ transactions = (
 )
 
 # Пример использования функции
-usd_transactions = filter_by_currency(transactions, "USD")
-for _ in range(2):
-    print(next(usd_transactions))
+# usd_transactions = filter_by_currency(transactions, "USD")
+# for _ in range(2):
+#     print(next(usd_transactions))
 
 
 def transaction_descriptions(transactions):
@@ -115,9 +115,9 @@ def transaction_descriptions(transactions):
 
 
 # Пример использования функции
-descriptions = transaction_descriptions(transactions)
-for _ in range(5):
-    print(next(descriptions))
+# descriptions = transaction_descriptions(transactions)
+# for _ in range(5):
+#     print(next(descriptions))
 
 
 def card_number_generator(start, end):
@@ -141,5 +141,5 @@ def card_number_generator(start, end):
 
 
 # Пример использования функции
-for card_number in card_number_generator(1, 7):
-    print(card_number)
+# for card_number in card_number_generator(1, 7):
+#     print(card_number)
